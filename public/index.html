@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="/manifest.json" />
+    <!-- materialize icons, css & js -->
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- dark -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@800&display=swap"
+        rel="stylesheet">
+    <link type="text/css" href="/css/dark.css" rel="stylesheet">
+    <!-- dark -->
+    <!-- sakib fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#202222" />
+    <meta name="google" content="notranslate" />
+    <script async src="https://unpkg.com/pwacompat" crossOrigin="anonymous"></script>
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon_120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon_152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/icons/apple-touch-icon_167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon_180.png" />
+    <!-- sakib fonts -->
+    <title>Portfolio</title>
+</head>
+
+<body id="body">
+    <nav class="z-depth-0 ss">
+        <div class="nav-wrapper container">
+            <p class="flow-text sss text" style="font-family: 'Playfair Display', serif;">
+                <a href="/" class="text"><b>Portfolio</b></a>
+            </p>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">
+                    <p class="text" style="cursor: pointer">menu</p>
+                </i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- side nav -->
+    <div class="container draggable bkg2-bg accent1 accent1-link" style="font-family: 'Playfair Display', serif;">
+        <ul id="side-menu" class="sidenav side-menu mm bkg2-bg accent1 accent1-link">
+            <li>
+                <div class="user-view">
+                    <div class="container">
+                        <p class="flow-text center text"><a href="/" class="text"><b>Portfolio</b></a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li class="text"><a class="waves-effect sidenav-close bkg1-bg" href="#about"><i class="material-icons text">
+                        <p class="text">person</p>
+                    </i>
+                    <p class="text"><b>About Me</b></p>
+                </a></li>
+            <li class="text-link"><a class="waves-effect sidenav-close bkg1-bg" href="#projects"><i
+                        class="material-icons text-link">
+                        <p class="text">phonelink</p>
+                    </i>
+                    <p class="text"><b>Projects</b></p>
+                </a></li>
+            <li class="text-link"><a class="waves-effect sidenav-close bkg1-bg" href="#options"><i
+                        class="material-icons text-link">
+                        <p class="text">school</p>
+                    </i>
+                    <p class="text"><b>Education</b></p>
+                </a></li>
+            <li class="text-link"><a class="waves-effect sidenav-close bkg1-bg" href="#options"><i
+                        class="material-icons text-link">
+                        <p class="text">card_travel</p>
+                    </i>
+                    <p class="text"><b>Experience</b></p>
+                </a></li>
+            <li><a class="waves-effect sidenav-close bkg1-bg"
+                    href="https://www.linkedin.com/in/sakeeb-biradar-94202b244/" target="_blank"><i
+                        class="material-icons">
+                        <p class="text">people</p>
+                    </i>
+                    <p class="text"><b>LinkedIn</b></p>
+                </a></li>
+            <li><a class="waves-effect sidenav-close bkg1-bg" href="#connect"><i class="material-icons">
+                        <p class="text">email</p>
+                    </i>
+                    <p class="text"><b>Contact Me</b></p>
+                </a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+        </ul>
+    </div>
+    <!-- nav end -->
+    <!-- headder start -->
+    <div class="container row">
+        <header class="col s12 m12 l12 xl12">
+            <div class="meet" id="meet">
+                <h2>Hello World</h2>
+                <p class="flow-text justify">Geeks don't care about what you say, they care about what you
+                    <b style="font-family: 'Playfair Display', serif;">build</b>.<span>
+                        <button id="darklightmode" class="theme right"></button></span>
+                </p>
+                <audio src="./audio/light-on.mp3" class="theme-audio--light-on"
+                    data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+                <audio src="./audio/light-off.mp3" class="theme-audio--light-off"
+                    data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+
+                <a href="#about" class="btn accent1-bg bkg1-link">About Me</a>
+            </div>
+            <div class="meet-img container hide-on-med-and-down">
+                <img src="./images/pspt1.png" alt="Sakeeb Biradar" class="responsive-img meet-img__teacher">
+            </div>
+        </header>
+    </div>
+    <div class="meet-img container hide-on-large-only">
+        <img src="./images/pspt1.png" alt="Sakeeb Biradar" class="responsive-img meet-img__teacher">
+    </div>
+    <section id="about">
+        <br><br>
+    </section>
+    <section class="method" id="method">
+        <svg width="642" height="233" viewBox="0 0 642 233" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="arrow method-arrow">
+            <path
+                d="M230.5 98.5L228.279 95.1731L228.26 95.1862L228.24 95.1995L230.5 98.5ZM435.5 104L431.522 104.419L435.5 104ZM306 219.5L303.749 222.806L306 219.5ZM282.5 143L279.074 140.936L279.074 140.936L282.5 143ZM642 116L629.503 71.5346L597.244 104.59L642 116ZM0.283992 3.4803C8.3097 23.6273 16.7889 46.7695 27.366 68.2073C37.9485 89.6562 50.8316 109.842 67.9419 124.075C85.1841 138.418 106.594 146.605 133.778 144.172C160.791 141.754 193.211 128.88 232.76 101.8L228.24 95.1995C189.289 121.87 158.188 133.955 133.065 136.203C108.114 138.437 88.7742 130.999 73.0581 117.925C57.2101 104.742 44.9265 85.7188 34.5403 64.6677C24.1486 43.6055 15.857 20.956 7.71601 0.519701L0.283992 3.4803ZM232.721 101.827C264.37 80.7001 312.248 55.8433 353.299 49.3636C373.823 46.1238 392.029 47.5761 405.645 55.7105C419.051 63.7192 428.815 78.7025 431.522 104.419L439.478 103.581C436.585 76.0975 425.882 58.4808 409.748 48.8427C393.825 39.3302 373.418 38.0887 352.051 41.4614C309.318 48.2067 260.297 73.7999 228.279 95.1731L232.721 101.827ZM431.522 104.419C434.963 137.106 430.408 161.335 421.533 179.045C412.674 196.724 399.369 208.192 384.775 215.165C370.132 222.162 354.16 224.64 340.141 224.201C325.998 223.757 314.382 220.368 308.251 216.194L303.749 222.806C311.618 228.164 324.94 231.728 339.89 232.197C354.965 232.67 372.243 230.019 388.225 222.383C404.256 214.723 418.951 202.054 428.685 182.629C438.404 163.236 443.037 137.394 439.478 103.581L431.522 104.419ZM308.251 216.194C296.975 208.516 287.05 197.723 282.146 185.402C277.306 173.243 277.266 159.437 285.926 145.064L279.074 140.936C269.045 157.579 269.005 174.023 274.713 188.36C280.355 202.535 291.525 214.484 303.749 222.806L308.251 216.194ZM285.926 145.064C297.12 126.487 321.854 105.433 357.247 89.0031C392.535 72.6213 438.086 61 490.5 61V53C436.914 53 390.215 64.8787 353.878 81.7469C317.646 98.5667 291.38 120.513 279.074 140.936L285.926 145.064ZM490.5 61C541.888 61 587.413 77.779 614.135 94.2594L618.335 87.4502C590.459 70.2583 543.494 53 490.5 53V61Z"
+                class="accent3" />
+        </svg>
+        <div class="method-header">
+            <p class="accent3" style="font-family: 'Libre Barcode 39 Text', cursive; font-size: xx-large;">A Software
+                Developer</p>
+            <h2>Sakeeb Biradar</h2>
+            <!-- About -->
+            <div class="about container">
+
+            </div>
+        </div>
+        <!-- Projects -->
+        <div class="container" id="projects">
+            <div class="method-header">
+                <h3 class="accent3">Skills, Certifications & Projects.</h3>
+            </div>
+        </div>
+        <div class="projects cards">
+
+        </div>
+        <!-- Modal Structure -->
+        <div class="projectdetails modal bkg1-bg outline">
+
+        </div>
+    </section>
+    <br>
+    <section class="options" id="options">
+        <div class="method-header">
+            <svg width="642" height="233" viewBox="0 0 642 233" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="arrow option-arrow">
+                <path
+                    d="M230.5 98.5L228.279 95.1731L228.26 95.1862L228.24 95.1995L230.5 98.5ZM435.5 104L431.522 104.419L435.5 104ZM306 219.5L303.749 222.806L306 219.5ZM282.5 143L279.074 140.936L279.074 140.936L282.5 143ZM642 116L629.503 71.5346L597.244 104.59L642 116ZM0.283992 3.4803C8.3097 23.6273 16.7889 46.7695 27.366 68.2073C37.9485 89.6562 50.8316 109.842 67.9419 124.075C85.1841 138.418 106.594 146.605 133.778 144.172C160.791 141.754 193.211 128.88 232.76 101.8L228.24 95.1995C189.289 121.87 158.188 133.955 133.065 136.203C108.114 138.437 88.7742 130.999 73.0581 117.925C57.2101 104.742 44.9265 85.7188 34.5403 64.6677C24.1486 43.6055 15.857 20.956 7.71601 0.519701L0.283992 3.4803ZM232.721 101.827C264.37 80.7001 312.248 55.8433 353.299 49.3636C373.823 46.1238 392.029 47.5761 405.645 55.7105C419.051 63.7192 428.815 78.7025 431.522 104.419L439.478 103.581C436.585 76.0975 425.882 58.4808 409.748 48.8427C393.825 39.3302 373.418 38.0887 352.051 41.4614C309.318 48.2067 260.297 73.7999 228.279 95.1731L232.721 101.827ZM431.522 104.419C434.963 137.106 430.408 161.335 421.533 179.045C412.674 196.724 399.369 208.192 384.775 215.165C370.132 222.162 354.16 224.64 340.141 224.201C325.998 223.757 314.382 220.368 308.251 216.194L303.749 222.806C311.618 228.164 324.94 231.728 339.89 232.197C354.965 232.67 372.243 230.019 388.225 222.383C404.256 214.723 418.951 202.054 428.685 182.629C438.404 163.236 443.037 137.394 439.478 103.581L431.522 104.419ZM308.251 216.194C296.975 208.516 287.05 197.723 282.146 185.402C277.306 173.243 277.266 159.437 285.926 145.064L279.074 140.936C269.045 157.579 269.005 174.023 274.713 188.36C280.355 202.535 291.525 214.484 303.749 222.806L308.251 216.194ZM285.926 145.064C297.12 126.487 321.854 105.433 357.247 89.0031C392.535 72.6213 438.086 61 490.5 61V53C436.914 53 390.215 64.8787 353.878 81.7469C317.646 98.5667 291.38 120.513 279.074 140.936L285.926 145.064ZM490.5 61C541.888 61 587.413 77.779 614.135 94.2594L618.335 87.4502C590.459 70.2583 543.494 53 490.5 53V61Z"
+                    class="accent2" />
+            </svg>
+            <br>
+            <h3 class="accent2">Education & Experience.</h3>
+        </div>
+        <!-- education & experience -->
+        <div class="education cards">
+
+        </div>
+        <div class="indetails modal bkg1-bg eoutline">
+
+        </div>
+    </section>
+    <section class="connect bkg2-bg" id="connect">
+        <div class="connect-form accent1-bg">
+            <h3>Let’s Connect!</h3>
+            <p>Contact me now! I'll contact you once I have your email.</p>
+            <form>
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" class="text">Enter Your Email Here</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="button" onclick="sendEmail()" name="action">Contact
+                    Me<i class="material-icons">send</i></button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer class="accent1-bg">
+        <div class="container hide-on-large-only">
+            <p class="social"><a href="https://www.linkedin.com/in/sakeeb-biradar-94202b244/" target="_blank"
+                    class="text"><b>Linked</b><i class="fa fa-linkedin"></i></a></p>
+            <p class="social"><i class="fa fa-phone"></i><a href="tel:+917348977242" class="text"><b>
+                        +917348977242</b></a></p>
+        </div>
+        <div class="container hide-on-large-only">
+            <p class="social"><i class="fa fa-envelope"></i><a href="mailto:sakeebbiradaronlyone@gmail.com"
+                    class="text"><b>
+                        sakeebbiradaronlyone@gmail.com</b></a></p>
+            <a href="#body"><i class="material-icons text">arrow_upward</i></a>
+        </div>
+        <div class="container hide-on-med-and-down">
+            <p class="social"><a href="https://www.linkedin.com/in/sakeeb-biradar-94202b244/" target="_blank"
+                    class="text"><b>Linked</b><i class="fa fa-linkedin"></i></a></p>
+            <p class="social"><i class="fa fa-envelope"></i><a href="mailto:sakeebbiradaronlyone@gmail.com"
+                    class="text"><b>
+                        sakeebbiradaronlyone@gmail.com</b></a></p>
+            <p class="social"><i class="fa fa-phone"></i><a href="tel:+917348977242" class="text"><b>
+                        +917348977242</b></a></p>
+            <a href="#body"><i class="material-icons text">arrow_upward</i></a>
+        </div>
+
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+    <script>
+        // firebase code start
+
+        var _0xe407 = ["\x41\x49\x7A\x61\x53\x79\x43\x50\x36\x65\x72\x76\x50\x6A\x76\x45\x42\x38\x7A\x72\x47\x38\x58\x41\x2D\x58\x36\x66\x44\x30\x69\x69\x6A\x35\x4F\x63\x50\x53\x34", "\x73\x61\x6B\x65\x65\x62\x2D\x62\x31\x32\x38\x2E\x66\x69\x72\x65\x62\x61\x73\x65\x61\x70\x70\x2E\x63\x6F\x6D", "\x73\x61\x6B\x65\x65\x62\x2D\x62\x31\x32\x38", "\x73\x61\x6B\x65\x65\x62\x2D\x62\x31\x32\x38\x2E\x61\x70\x70\x73\x70\x6F\x74\x2E\x63\x6F\x6D", "\x37\x32\x34\x37\x33\x38\x30\x34\x34\x35\x37\x38", "\x31\x3A\x37\x32\x34\x37\x33\x38\x30\x34\x34\x35\x37\x38\x3A\x77\x65\x62\x3A\x37\x33\x39\x30\x66\x61\x64\x31\x37\x38\x62\x32\x30\x34\x31\x34\x66\x63\x39\x64\x66\x62", "\x47\x2D\x47\x57\x53\x50\x4D\x54\x44\x42\x33\x4B", "\x69\x6E\x69\x74\x69\x61\x6C\x69\x7A\x65\x41\x70\x70", "\x66\x69\x72\x65\x73\x74\x6F\x72\x65"]; var config = { apiKey: _0xe407[0], authDomain: _0xe407[1], projectId: _0xe407[2], storageBucket: _0xe407[3], messagingSenderId: _0xe407[4], appId: _0xe407[5], measurementId: _0xe407[6] }; firebase[_0xe407[7]](config); const db = firebase[_0xe407[8]]()
+
+        // firebase code start
+    </script>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/db.js"></script>
+    <script src="/js/app.js"></script>
+    <script type="text/javascript">
+        // dark.js code start
+
+        var _0xa79b=["\x2E\x74\x68\x65\x6D\x65","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x6D\x61\x74\x63\x68\x65\x73","\x28\x70\x72\x65\x66\x65\x72\x73\x2D\x63\x6F\x6C\x6F\x72\x2D\x73\x63\x68\x65\x6D\x65\x3A\x20\x64\x61\x72\x6B\x29","\x6D\x61\x74\x63\x68\x4D\x65\x64\x69\x61","\x64\x61\x72\x6B","\x6C\x69\x67\x68\x74","\x63\x61\x6E\x61\x62\x72\x65\x79\x2E\x74\x68\x65\x6D\x65","\x67\x65\x74\x49\x74\x65\x6D","\x3A\x72\x6F\x6F\x74","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x6D\x6F\x6F\x6E\x2E\x67\x69\x66\x22\x20\x61\x6C\x74\x3D\x22\x6D\x6F\x6F\x6E\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x77\x69\x64\x74\x68\x3A\x38\x35\x25\x3B\x20\x68\x65\x69\x67\x68\x74\x3A\x38\x35\x25\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x73\x70\x6F\x6E\x73\x69\x76\x65\x2D\x69\x6D\x67\x22\x3E\x3C\x2F\x69\x6D\x67\x3E","\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22\x2E\x2F\x69\x6D\x61\x67\x65\x73\x2F\x73\x75\x6E\x2E\x67\x69\x66\x22\x20\x61\x6C\x74\x3D\x22\x73\x75\x6E\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x77\x69\x64\x74\x68\x3A\x36\x35\x25\x3B\x20\x68\x65\x69\x67\x68\x74\x3A\x36\x35\x25\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x73\x70\x6F\x6E\x73\x69\x76\x65\x2D\x69\x6D\x67\x22\x3E\x3C\x2F\x69\x6D\x67\x3E","\x63\x6F\x6C\x6F\x72\x2D\x73\x63\x68\x65\x6D\x65","","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x6C\x69\x63\x6B","\x2E\x74\x68\x65\x6D\x65\x2D\x61\x75\x64\x69\x6F\x2D\x2D\x6C\x69\x67\x68\x74\x2D\x6F\x6E","\x2E\x74\x68\x65\x6D\x65\x2D\x61\x75\x64\x69\x6F\x2D\x2D\x6C\x69\x67\x68\x74\x2D\x6F\x66\x66","\x63\x75\x72\x72\x65\x6E\x74\x54\x69\x6D\x65","\x70\x6C\x61\x79","\x73\x65\x74\x49\x74\x65\x6D","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x44\x4F\x4D\x43\x6F\x6E\x74\x65\x6E\x74\x4C\x6F\x61\x64\x65\x64"];const themeBtn=document[_0xa79b[1]](_0xa79b[0]);function getCurrentTheme(){let _0x4b48x3=window[_0xa79b[4]](_0xa79b[3])[_0xa79b[2]]?_0xa79b[5]:_0xa79b[6];localStorage[_0xa79b[8]](_0xa79b[7])?_0x4b48x3= localStorage[_0xa79b[8]](_0xa79b[7]):null;return _0x4b48x3}function loadTheme(_0x4b48x3){const _0x4b48x5=document[_0xa79b[1]](_0xa79b[9]);if(_0x4b48x3=== _0xa79b[6]){themeBtn[_0xa79b[10]]= `${_0xa79b[11]}`}else {themeBtn[_0xa79b[10]]= `${_0xa79b[12]}`};_0x4b48x5[_0xa79b[15]](_0xa79b[13],`${_0xa79b[14]}${_0x4b48x3}${_0xa79b[14]}`)}themeBtn[_0xa79b[22]](_0xa79b[16],()=>{let _0x4b48x3=getCurrentTheme();let _0x4b48x6;if(_0x4b48x3=== _0xa79b[5]){_0x4b48x6= document[_0xa79b[1]](_0xa79b[17]);_0x4b48x3= _0xa79b[6]}else {_0x4b48x6= document[_0xa79b[1]](_0xa79b[18]);_0x4b48x3= _0xa79b[5]};_0x4b48x6[_0xa79b[19]]= 0;_0x4b48x6[_0xa79b[20]]();localStorage[_0xa79b[21]](_0xa79b[7],`${_0xa79b[14]}${_0x4b48x3}${_0xa79b[14]}`);loadTheme(_0x4b48x3)});window[_0xa79b[22]](_0xa79b[23],()=>{loadTheme(getCurrentTheme())})
+        
+        // dark.js code end
+    </script>
+
+    <script type="text/javascript">
+        //clickme code start
+
+        var _0xed8d = ["\x23\x63\x6C\x69\x63\x6B\x6D\x65", "\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C", "\x6C\x65\x6E\x67\x74\x68", "\x67\x65\x74\x43\x6F\x6D\x70\x75\x74\x65\x64\x53\x74\x79\x6C\x65", "\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79", "\x76\x69\x73\x69\x62\x6C\x65", "\x64\x69\x73\x70\x6C\x61\x79", "\x73\x74\x79\x6C\x65", "\x6E\x6F\x6E\x65", "\x62\x6C\x6F\x63\x6B"]; function myclick() { const _0x2b3ax2 = document[_0xed8d[1]](_0xed8d[0]); for (let _0x2b3ax3 = 0; _0x2b3ax3 < _0x2b3ax2[_0xed8d[2]]; _0x2b3ax3++) { const _0x2b3ax4 = window[_0xed8d[3]](_0x2b3ax2[_0x2b3ax3]); if (_0x2b3ax4[_0xed8d[4]] == _0xed8d[5]) { _0x2b3ax2[_0x2b3ax3][_0xed8d[7]][_0xed8d[6]] = _0xed8d[8] } else { _0x2b3ax2[_0x2b3ax3][_0xed8d[7]][_0xed8d[6]] = _0xed8d[9] } } }
+        
+        //clickme code end
+    </script>
+
+    <script type="text/javascript">
+        // email code start
+
+        var _0xb39b = ["\x76\x61\x6C\x75\x65", "\x65\x6D\x61\x69\x6C", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "", "\x45\x6E\x74\x65\x72\x20\x56\x61\x6C\x69\x64\x20\x45\x6D\x61\x69\x6C\x21", "\x20\x43\x68\x65\x63\x6B\x20\x59\x6F\x75\x72\x20\x4D\x61\x69\x6C\x20\x49\x6E\x62\x6F\x78\x20\x6F\x72\x20\x53\x70\x61\x6D\x20\x46\x6F\x6C\x64\x65\x72", "\x74\x68\x65\x6E", "\x73\x6D\x74\x70\x2E\x65\x6C\x61\x73\x74\x69\x63\x65\x6D\x61\x69\x6C\x2E\x63\x6F\x6D", "\x73\x61\x6B\x65\x65\x62\x62\x69\x72\x61\x64\x61\x72\x6F\x6E\x6C\x79\x6F\x6E\x65\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D", "\x36\x46\x30\x30\x31\x33\x36\x44\x43\x43\x32\x37\x33\x41\x30\x35\x33\x36\x39\x37\x33\x44\x31\x45\x31\x44\x43\x30\x45\x46\x39\x31\x34\x37\x31\x42", "\x50\x6F\x72\x74\x66\x6F\x6C\x69\x6F\x20\x43\x6F\x6E\x74\x61\x63\x74", "\x3C\x62\x72\x3E\x3C\x62\x3E\x53\x6F\x6D\x65\x6F\x6E\x65\x20\x77\x69\x74\x68\x20\x74\x68\x69\x73\x20\x45\x6D\x61\x69\x6C\x49\x64\x20\x3C\x2F\x62\x3E", "\x3C\x62\x3E\x20\x63\x6F\x6E\x74\x61\x63\x74\x65\x64\x20\x79\x6F\x75\x20\x74\x68\x72\x6F\x75\x67\x68\x20\x79\x6F\x75\x72\x20\x70\x6F\x72\x74\x66\x6F\x6C\x69\x6F\x2C\x20\x50\x6C\x65\x61\x73\x65\x20\x72\x65\x61\x63\x68\x20\x6F\x75\x74\x20\x74\x6F\x20\x68\x69\x6D\x20\x77\x69\x74\x68\x20\x61\x6E\x79\x20\x63\x6F\x6E\x63\x65\x72\x6E\x73\x2E\x3C\x2F\x62\x3E\x3C\x62\x72\x3E", "\x73\x65\x6E\x64", "\x43\x6F\x6E\x74\x61\x63\x74\x20\x4D\x61\x69\x6C", "\x3C\x62\x72\x3E\x3C\x62\x3E\x47\x72\x65\x65\x74\x69\x6E\x67\x73\x20\x6F\x66\x20\x74\x68\x65\x20\x64\x61\x79\x2C\x3C\x2F\x62\x3E\x3C\x62\x72\x3E\x3C\x62\x3E\x49\x20\x68\x6F\x70\x65\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x64\x6F\x69\x6E\x67\x20\x77\x65\x6C\x6C\x2E\x3C\x2F\x62\x3E\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x3C\x62\x3E\x54\x68\x61\x6E\x6B\x20\x79\x6F\x75\x20\x66\x6F\x72\x20\x63\x6F\x6E\x74\x61\x63\x74\x69\x6E\x67\x20\x6D\x65\x20\x74\x68\x72\x6F\x75\x67\x68\x20\x6D\x79\x20\x70\x6F\x72\x74\x66\x6F\x6C\x69\x6F\x2C\x20\x50\x6C\x65\x61\x73\x65\x20\x6C\x65\x74\x20\x6D\x65\x20\x6B\x6E\x6F\x77\x20\x68\x6F\x77\x20\x6D\x61\x79\x20\x49\x20\x68\x65\x6C\x70\x20\x79\x6F\x75\x2E\x3C\x2F\x62\x3E\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x3C\x62\x3E\x52\x65\x67\x61\x72\x64\x73\x2C\x20\x53\x41\x4B\x45\x45\x42\x20\x42\x49\x52\x41\x44\x41\x52\x2E\x3C\x2F\x62\x3E\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x3C\x62\x72\x3E\x54\x68\x69\x73\x20\x69\x73\x20\x61\x6E\x20\x61\x75\x74\x6F\x6D\x61\x74\x65\x64\x20\x6D\x61\x69\x6C\x2E"]; function sendEmail() { let _0x3728x2 = document[_0xb39b[2]](_0xb39b[1])[_0xb39b[0]]; if (_0x3728x2 === _0xb39b[3] || _0x3728x2 === null) { alert(_0xb39b[4]) } else { Email[_0xb39b[13]]({ Host: _0xb39b[7], Username: _0xb39b[8], Password: _0xb39b[9], From: _0xb39b[8], To: _0xb39b[8], Subject: _0xb39b[10], Body: _0xb39b[11] + _0x3728x2 + _0xb39b[12] })[_0xb39b[6]]((_0x3728x3) => { return alert(_0x3728x3 + _0xb39b[5]) }); Email[_0xb39b[13]]({ Host: _0xb39b[7], Username: _0xb39b[8], Password: _0xb39b[9], From: _0xb39b[8], To: _0x3728x2, Subject: _0xb39b[14], Body: _0xb39b[15] })[_0xb39b[6]]((_0x3728x3) => { return alert(_0x3728x3) }) } }
+
+        // email code end
+    </script>
+</body>
+
+</html>
